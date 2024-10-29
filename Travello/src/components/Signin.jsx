@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 import { auth, googleProvider } from '../Config/firebase.js';
 import { signInWithPopup } from 'firebase/auth';
+import {server} from "../main.jsx"
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +25,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', formData, {
+      const response = await axios.post(`${server}/auth/login`, formData, {
         headers: {
           'Content-Type': 'application/json',
         },

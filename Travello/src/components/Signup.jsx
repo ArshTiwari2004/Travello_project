@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { auth, googleProvider } from '../Config/firebase';
 import { signInWithPopup } from 'firebase/auth';
+import {server} from "../main.jsx"
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -37,7 +38,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register', {
+      const response = await axios.post(`${server}/auth/register`, {
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
