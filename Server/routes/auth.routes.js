@@ -1,6 +1,6 @@
 import express from 'express';
 import { registerUser, loginUser, googleSignIn,logoutUser } from '../controllers/user.controller.js';
-import { loginLimiter } from '../middlewares/loginLimiter.js';
+import { loginLimiter } from '../middlewares/LoginLimiter.js';
 
 const router = express.Router();
 
