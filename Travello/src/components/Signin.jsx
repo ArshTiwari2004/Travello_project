@@ -53,10 +53,10 @@ const Login = () => {
       const result = await signInWithPopup(auth, googleProvider);
       const token = await result.user.getIdToken();
 
-      const response = await axios.post('http://localhost:5000/api/auth/google', {
+      const response = await axios.post(`${server}/auth/google`, {
         token,
       }, {
-        withCredentials: true,  // Send cookies 
+        withCredentials: true,
       });
       toast.success("Logged in ! ")
       console.log('Google Sign-In success:', response.data);
