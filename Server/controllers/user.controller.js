@@ -16,7 +16,7 @@ const registerUser = async (req, res) => {
             firstName,
             lastName,
             email,
-            hashedPassword,
+            password: hashedPassword,
             country,
             phone,
             gender,
