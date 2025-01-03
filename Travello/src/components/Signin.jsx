@@ -110,7 +110,7 @@ const Login = () => {
             Login
           </button>
         </form>
-        <div className="mt-4 flex items-center justify-center">
+        {/* <div className="mt-4 flex items-center justify-center">
           <p className="text-gray-600">or continue with</p>
           <button
             onClick={handleGoogleSignIn}
@@ -119,7 +119,7 @@ const Login = () => {
             <FcGoogle className="mr-2 w-5 h-5" />
             Google
           </button>
-        </div>
+        </div> */}
         <p className="mt-4 text-gray-600">
           Don't have an account?
           <a href="/signup" className="text-emerald-800 hover:underline"> Signup</a>

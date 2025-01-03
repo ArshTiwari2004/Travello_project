@@ -15,7 +15,7 @@ export default defineConfig({
     proxy: {
       // Proxy API requests to the backend
       '/api': {
-        target: 'http://localhost:5000', // Backend server
+        target: 'https://manipal-hackathon-xxxz.onrender.com/api', // Backend server
         changeOrigin: true,
         secure: false,
       },

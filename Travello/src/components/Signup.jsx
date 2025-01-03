@@ -203,7 +203,7 @@ const Signup = () => {
               className="w-full p-1 border-0 focus:outline-none"
             />
           </div>
-          <div className="flex items-center mb-4">
+          {/* <div className="flex items-center mb-4">
             <input
               type="checkbox"
               name="rememberMe"
@@ -212,7 +212,7 @@ const Signup = () => {
               className="mr-2"
             />
             <label className="text-gray-600">Remember Me</label>
-          </div>
+          </div> */}
           <button
             type="button"
             onClick={() => console.log('Forgot Password Clicked')}
@@ -228,7 +228,7 @@ const Signup = () => {
             Create Account
           </button>
         </form>
-        <div className="mt-4 flex items-center justify-center">
+        {/* <div className="mt-4 flex items-center justify-center">
           <p className="text-gray-600">or continue with</p>
           <button
             onClick={handleGoogleSignIn}
@@ -237,7 +237,7 @@ const Signup = () => {
             <FcGoogle className="w-6 h-6 mr-2" />
             Google
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

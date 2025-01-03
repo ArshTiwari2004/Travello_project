@@ -9,7 +9,7 @@ import './config/dotenv.js';
 
 const app = express();
 app.use(cors({
-    origin: 'https://manipal-hackathon-egnpaymk8-heisenberg300604s-projects.vercel.app', 
+    origin: 'https://manipal-hackathon.vercel.app', 
     credentials: true,                
   }));
 
