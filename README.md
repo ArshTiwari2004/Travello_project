@@ -1,12 +1,33 @@
-# Manipal Hackathon 2024 README Template
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?lines=Welcome+to+Travello+,+let's+discover+the+world+together;&center=true&color=0066FF&width=1000&height=70">
+</p>
 
 **Team Name:** `Synapse`
 
-**Problem Statement:** `G-2: Tourism often lacks engagement and interactive experiences, leading to missed opportunities for travelers to discover unique local attractions and fully immerse themselves in local culture. Design a sophisticated gamified tourism application that motivates users to thoroughly explore their destination by earning points through uncovering hidden attractions and completing challenges and quests such as uploading photos taken from specific angles to match reference images. The application should also feature leaderboards, rewards, and integrated social sharing capabilities.`
+**Problem Statement:** ` Tourism often lacks engagement and interactive experiences, leading to missed opportunities for travelers to discover unique local attractions and fully immerse themselves in local culture. Design a sophisticated gamified tourism application that motivates users to thoroughly explore their destination by earning points through uncovering hidden attractions and completing challenges and quests such as uploading photos taken from specific angles to match reference images. The application should also feature leaderboards, rewards, and integrated social sharing capabilities.`
 
 ## 📜 Introduction
 
-Tourism in India often lacks engagement, leading to missed opportunities for travelers to explore local culture.To overcome all these problems ,We are developing a gamified tourism platform designed to revolutionize how travelers explore their destinations. Our application will guide users to hidden attractions and cultural experiences through interactive challenges and quests, transforming the act of discovery into an engaging adventure. Leveraging AI-driven personalization, users will receive customized itineraries that adapt to their preferences and real-time conditions. This platform not only enriches the travel experience but also fosters a deeper connection with local culture, making every journey memorable.
+<p align="center"><em>Tourism in India often lacks engagement, leading to missed opportunities for travelers to explore local culture.To overcome all these problems ,We are developing a gamified tourism platform designed to revolutionize how travelers explore their destinations. Our application will guide users to hidden attractions and cultural experiences through interactive challenges and quests, transforming the act of discovery into an engaging adventure. Leveraging AI-driven personalization, users will receive customized itineraries that adapt to their preferences and real-time conditions. This platform not only enriches the travel experience but also fosters a deeper connection with local culture, making every journey memorable.</em></p>
+
+
+
+
+[![GitHub Issues](https://img.shields.io/github/issues/ArshTiwari2004/Travello_project)](https://github.com/ArshTiwari2004/Travello_project/issues)
+[![GitHub Forks](https://img.shields.io/github/forks/ArshTiwari2004/Travello_project)](https://github.com/ArshTiwari2004/Travello_project/network)
+[![GitHub Stars](https://img.shields.io/github/stars/ArshTiwari2004/Travello_project)](https://github.com/ArshTiwari2004/Travello_project/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/ArshTiwari2004/Travello_project)](https://github.com/ArshTiwari2004/Travello_project/graphs/contributors)
+[![License](https://img.shields.io/github/license/ArshTiwari2004/Travello_project)](LICENSE)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ArshTiwari2004/Travello_project)
+![GitHub last commit](https://img.shields.io/github/last-commit/ArshTiwari2004/Travello_project)
+
+## Architecture
+
+
+<p align="center">
+  <img src="Architecture.png" alt="Architecture Diagram" style="border: 2px solid #000; max-width: 50%; height: auto;">
+</p>
+
 
 ## ✨ Features
 
@@ -15,6 +36,8 @@ Website:
 - AI-Powered Personalization: The **Dynamic Itinerary Generator** in Travello uses AI to create personalized travel plans, adjusting them based on user preferences, real-time events, and weather updates. This ensures a customized and flexible travel experience.
 - Gamification: Travello rewards users with points, badges, and achievements for completing challenges, encouraging exploration. As users level up, they unlock exclusive content and discover hidden locations.
 - Challenges & Quest: Travello offers gamified experiences with photo challenges, leaderboards, and culture-based quests, enhancing user engagement. Successful participation earns rewards, making travel both fun and competitive.
+
+
 
 
 

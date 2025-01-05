@@ -72,45 +72,45 @@ const App = () => {
               <Route path="/signup" element={<Signup />} />
               <Route path="/signin" element={<Login />} />
               <Route path="/accountcreated" element={<AccountCreated />} />
-              <Route path="/dashboard" element={<ProtectedRoute>
-                <Dashboard />
-              </ProtectedRoute>} />
+              <Route path="/dashboard" element={<Dashboard />} />
+                
+          
               <Route path="/socials" element={<SocialIntegration />} />
               <Route path="/leaderboard" element={
-                <ProtectedRoute>
+              
                   <Leaderboard />
-                </ProtectedRoute>} />
+              }/>
               {/* <Route path="/challenges" element={<CompleteChallengesPage />} /> */}
 
               <Route path="/profile" element={
-                <ProtectedRoute>
+               
                   <Profile />
-                </ProtectedRoute>
+               
               } />
               <Route path="/localculture" element={
-                <ProtectedRoute>
+             
                   <Localculture />
-                </ProtectedRoute>} />
+                } />
               <Route path="/quests" element={
-                <ProtectedRoute>
+                
                  <Quests />
-                </ProtectedRoute>} />
+               } />
               <Route path="/Challenge" element={
-                <ProtectedRoute>
+               
                   <Challenge />
-                </ProtectedRoute>} />
+                } />
               <Route path="/my-badges" element={
-                <ProtectedRoute>
+               
                   <Badges />
-                </ProtectedRoute>} />
+                } />
               <Route path="/hidden-attraction-maps" element={
-                <ProtectedRoute>
+               
                   <HiddenAttractions />
-                </ProtectedRoute>} />
+                } />
                 <Route path="/offline-mode" element={
-                <ProtectedRoute>
+               
                   <OfflineMode/>
-                </ProtectedRoute>} />
+                } />
               <Route path="*" element={<NotFoundPage />} />
               <Route path="/offline-mode" element ={<OfflineMode />} />
               <Route path="/green-points-system" element={<GreenPointsSystem />} />
