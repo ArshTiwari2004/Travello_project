@@ -27,7 +27,7 @@
     "file-saver": "^2.0.5",
     "firebase": "^10.14.0",
     "flag-icons": "^7.2.3",
-    "framer-motion": "^11.11.8",
+    "framer-motion": "^11.15.0",
     "gamify.js": "^1.0.0",
     "idb": "^8.0.0",
     "lucide-react": "^0.452.0",
@@ -58,7 +58,7 @@
     "socket.io": "^4.8.0",
     "socket.io-client": "^4.8.0",
     "styled-components": "^6.1.13",
-    "tailwind-merge": "^2.5.3",
+    "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "typewriter-effect": "^2.21.0",
     "uuid": "^10.0.0"
