@@ -8,17 +8,13 @@
 
 ## 📜 Introduction
 
-Tourism in India often lacks engagement, leading to missed opportunities for travelers to explore local culture.To overcome all these problems ,We are developing a gamified tourism platform designed to revolutionize how travelers explore their destinations. Our application will guide users to hidden attractions and cultural experiences through interactive challenges and quests, transforming the act of discovery into an engaging adventure. Leveraging AI-driven personalization, users will receive customized itineraries that adapt to their preferences and real-time conditions. This platform not only enriches the travel experience but also fosters a deeper connection with local culture, making every journey memorable.
-
+<p align="center"><em>Tourism in India often lacks engagement, leading to missed opportunities for travelers to explore local culture.To overcome all these problems ,We are developing a gamified tourism platform designed to revolutionize how travelers explore their destinations. Our application will guide users to hidden attractions and cultural experiences through interactive challenges and quests, transforming the act of discovery into an engaging adventure. Leveraging AI-driven personalization, users will receive customized itineraries that adapt to their preferences and real-time conditions. This platform not only enriches the travel experience but also fosters a deeper connection with local culture, making every journey memorable.</em></p>
 ## Architecture
 
 
 <p align="center">
   <img src="Architecture.png" alt="Architecture Diagram" style="border: 2px solid #000; max-width: 50%; height: auto;">
 </p>
-
-
-
 
 
 ## ✨ Features
