@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Welcome+to+Travello+,+let's+discover+the+world+together;&center=true&color=0066FF&width=900&height=50">
+  <img src="https://readme-typing-svg.demolab.com/?lines=Welcome+to+Travello+,+let's+discover+the+world+together;&center=true&color=0066FF&width=1000&height=70">
 </p>
 
 **Team Name:** `Synapse`
