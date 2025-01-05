@@ -1,4 +1,4 @@
-# Manipal Hackathon 2024 README Template
+# Manipal Hackathon 2024 README Templat
 
 **Team Name:** `Synapse`
 
