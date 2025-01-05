@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import tailwindcssAnimate from 'tailwindcss-animate';
-const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
+import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette';
 
 export default {
   darkMode: ["class"],
