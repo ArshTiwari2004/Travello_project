@@ -3,25 +3,12 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Sidebar from './Sidebar'; // Importing Sidebar component
 import {
-    FaMapMarkedAlt, FaCamera, FaTrophy, FaShareAlt, FaUsers, FaDownload,
-    FaLeaf, FaHome, FaUserCircle, FaRecycle, FaSeedling, FaRobot
+    FaMapMarkedAlt, FaCamera, FaTrophy, FaShareAlt, FaLeaf, FaRobot, FaRecycle, FaSeedling,
 } from 'react-icons/fa';
 
 const Dashboard = () => {
-    // const showNotification = () => {
-    //     toast.success("Welcome to the Dashboard! Explore all the amazing features!", {
-    //         position: "top-center",
-    //         autoClose: 3000,
-    //         hideProgressBar: true,
-    //         theme: "dark",
-    //     });
-    // };
-
-    // React.useEffect(() => {
-    //     showNotification();
-    // }, []);
-
     const features = [
         {
             title: 'Hidden Attractions',
@@ -42,7 +29,7 @@ const Dashboard = () => {
             description: 'Earn badges, levels, and celebrate your accomplishments.',
             image: 'a.jpg',
             link: '/achievements',
-            icon: <FaTrophy size={100} className="text-[#ffd700]" />,
+            icon: <FaTrophy size={45} className="text-[#ffd700]" />,
         },
         {
             title: 'Social Integration',
@@ -52,34 +39,6 @@ const Dashboard = () => {
             icon: <FaShareAlt size={45} className="text-[#00bd9d]" />,
         },
         {
-            title: 'Dynamic Leaderboards',
-            description: 'Compete with friends and see how you rank!',
-            image: 'l.png',
-            link: '/leaderboards',
-            icon: <FaUsers size={45} className="text-[#8bd7d2]" />,
-        },
-        {
-            title: 'Offline Mode',
-            description: 'Download maps for offline use and explore without internet!',
-            image: 'om.png',
-            link: '/offline-mode',
-            icon: <FaDownload size={40} className="text-[#ff6347]" />,
-        },
-        {
-            title: 'Culture Immersion',
-            description: 'Immerse in local culture and enjoy unique experiences.',
-            image: 'ci.jpeg',
-            link: '/culture-immersion',
-            icon: <FaLeaf size={30} className="text-[#ffa500]" />,
-        },
-        {
-            title: 'AI Itinerary',
-            description: 'Get personalized travel suggestions powered by AI.',
-            image: 'ai.png',
-            link: '/ai-itinerary',
-            icon: <FaRobot size={45} className="text-gray-500" />,
-        },
-        {
             title: 'Eco-Friendly Services',
             description: 'Discover eco-friendly travel options and reduce your footprint.',
             image: 'eco2.jpg',
@@ -87,7 +46,7 @@ const Dashboard = () => {
             icon: <FaSeedling size={45} className="text-[#00bd9d]" />,
         },
         {
-            title: 'Carbon Emmissions',
+            title: 'Carbon Emissions',
             description: 'Track and reduce your carbon footprint with eco-friendly tips.',
             image: 'cf.png',
             link: '/green-points-system',
@@ -97,72 +56,12 @@ const Dashboard = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-[#fffbfa] to-gray-200 flex">
-            {/* Left Navbar */}
-            <div className="w-1/5 min-h-screen bg-gradient-to-b from-[#49c6e5] to-[#54defd] p-6 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center mb-6">
-                         
-                        <Link to="/" className="text-white flex items-center text-2xl font-bold hover:text-gray-200">
-                               <FaHome className="mr-5" /> travello
-                         </Link>
-                    </div>
-                    <div className="space-y-4">
-                        <Link to="/hidden-attraction-maps" className="text-white text-lg font-semibold hover:bg-[#00bd9d] p-3 rounded-md flex items-center transition ease-in-out duration-300">
-                            <FaMapMarkedAlt className="mr-3" /> Hidden Attractions
-                        </Link>
-                        <Link to="/socials" className="text-white text-lg font-semibold hover:bg-[#00bd9d] p-3 rounded-md flex items-center transition ease-in-out duration-300">
-                            <FaShareAlt className="mr-3" /> Link your Socials
-                        </Link>
-                        <Link to="/leaderboard" className="text-white text-lg font-semibold hover:bg-[#00bd9d] p-3 rounded-md flex items-center transition ease-in-out duration-300">
-                            <FaUsers className="mr-3" /> Leaderboard
-                        </Link>
-                        <Link to="/quests" className="text-white text-lg font-semibold hover:bg-[#00bd9d] p-3 rounded-md flex items-center transition ease-in-out duration-300">
-                            <FaCamera className="mr-3" /> My Quests
-                        </Link>
-                        <a href="https://iti-gen-47hm-git-main-arushs-projects-de106c3b.vercel.app/" className="text-white text-lg font-semibold hover:bg-[#00bd9d] p-3 rounded-md flex items-center transition ease-in-out duration-300">
-                            <FaLeaf className="mr-3" /> My Itinerary
-                        </a>
-                        <Link to="/my-badges" className="text-white text-lg font-semibold hover:bg-[#00bd9d] p-3 rounded-md flex items-center transition ease-in-out duration-300">
-                            <FaTrophy className="mr-3" /> My Badges
-                        </Link>
-
-                        <Link to="/Challenge" className="text-white text-lg font-semibold hover:bg-[#00bd9d] p-3 rounded-md flex items-center transition ease-in-out duration-300">
-
-                            <FaTrophy className="mr-3" /> My Challenges
-                        </Link>
-                        <Link to="/local" className="text-white text-lg font-semibold hover:bg-[#00bd9d] p-3 rounded-md flex items-center transition ease-in-out duration-300">
-                            <FaLeaf  className="mr-3" /> Local Immersion
-                        </Link>
-                        <Link to="/offline-mode" className="text-white text-lg font-semibold hover:bg-[#00bd9d] p-3 rounded-md flex items-center transition ease-in-out duration-300">
-                            <FaDownload className="mr-3" /> Offline Mode
-                        </Link>
-                        <Link to="/green-points-system" className="text-white text-lg font-semibold hover:bg-[#00bd9d] p-3 rounded-md flex items-center transition ease-in-out duration-300">
-                            <FaDownload className="mr-3" /> Green Points
-                        </Link>
-
-                        <Link to="/eco-friendly" className="text-white text-lg font-semibold hover:bg-[#00bd9d] p-3 rounded-md flex items-center transition ease-in-out duration-300">
-                            <FaDownload className="mr-3" /> Let's Go Green
-                        </Link>
-                        <Link to="/carbon-reduction-map" className="text-white text-lg font-semibold hover:bg-[#00bd9d] p-3 rounded-md flex items-center transition ease-in-out duration-300">
-                            <FaDownload className="mr-3" /> Carbon Reducer Map 
-                        </Link>
-
-                        <Link to="/sdg" className="text-white text-lg font-semibold hover:bg-[#00bd9d] p-3 rounded-md flex items-center transition ease-in-out duration-300">
-                            <FaDownload className="mr-3" /> Our Social Development Goals
-                        </Link>
-
-
-
-                    </div>
-                </div>
-                <Link to="/profile" className="text-white flex items-center text-xl font-bold hover:text-gray-300">
-                    <FaUserCircle className="mr-3" /> My Profile
-                </Link>
-            </div>
+            {/* Sidebar */}
+            <Sidebar />
 
             {/* Main Content */}
             <div className="w-4/5 p-8">
-                {/* <ToastContainer /> */}
+                <ToastContainer />
                 <motion.h1
                     className="text-5xl font-bold text-[#49c6e5] mb-8 text-center"
                     initial={{ y: -50, opacity: 0 }}
@@ -176,7 +75,7 @@ const Dashboard = () => {
                     {features.map((feature, index) => (
                         <motion.div
                             key={index}
-                            className={`flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''} items-center bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow border border-gray-200`}
+                            className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow border border-gray-200"
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
