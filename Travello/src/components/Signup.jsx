@@ -84,9 +84,9 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-green-200">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-b from-cyan-50 to-cyan-100 py-12 px-4">
       <div className="flex flex-col justify-center items-center p-10 w-full max-w-md bg-white shadow-lg rounded-lg">
-        <h1 className="text-4xl font-bold mb-1 text-emerald-800">Sign Up</h1>
+        <h1 className="text-4xl font-bold mb-1 text-cyan-800">Sign Up</h1>
         <p className="text-lg text-gray-600 mb-4">It's quick and easy!</p>
         <form onSubmit={handleSubmit} className="space-y-4 w-full">
           <div className="flex space-x-4 mb-4">
@@ -216,14 +216,14 @@ const Signup = () => {
           <button
             type="button"
             onClick={() => console.log('Forgot Password Clicked')}
-            className="text-emerald-800 text-sm hover:underline mb-4 mx-auto"
+            className="text-cyan-800 text-sm hover:underline mb-4 mx-auto"
           >
             Forgot Password?
           </button>
           <button to="/account-created" 
             type="submit"
             onClick={handleSubmit}
-            className="w-full p-3 bg-emerald-800 text-white rounded hover:bg-emerald-700 transition duration-200"
+            className="w-full p-3 bg-cyan-800 text-white rounded hover:bg-emerald-700 transition duration-200"
           >
             Create Account
           </button>

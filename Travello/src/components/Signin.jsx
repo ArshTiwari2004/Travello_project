@@ -67,9 +67,9 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-green-200">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-cyan-50 to-cyan-100 py-12 px-4">
       <div className="flex flex-col justify-center items-center p-10 w-full max-w-md bg-white shadow-lg rounded-lg">
-        <h1 className="text-4xl font-bold mb-1 text-emerald-800">Login</h1>
+        <h1 className="text-4xl font-bold mb-1 text-cyan-800">Login</h1>
         <p className="text-lg text-gray-600 mb-4">Welcome back!</p>
         <form onSubmit={handleSubmit} className="space-y-4 w-full">
           <div className="flex items-center border-b border-black pb-2 mb-4">
@@ -99,13 +99,13 @@ const Login = () => {
           <button
             type="button"
             onClick={() => console.log('Forgot Password Clicked')}
-            className="text-emerald-800 text-sm hover:underline mb-4 mx-auto"
+            className="text-cyan-800 text-sm hover:underline mb-4 mx-auto"
           >
             Forgot Password?
           </button>
           <button
             type="submit"
-            className="w-full p-3 bg-emerald-800 text-white rounded hover:bg-emerald-700 transition duration-200"
+            className="w-full p-3 bg-cyan-800 text-white rounded hover:bg-emerald-700 transition duration-200"
           >
             Login
           </button>
@@ -122,7 +122,7 @@ const Login = () => {
         </div> */}
         <p className="mt-4 text-gray-600">
           Don't have an account?
-          <a href="/signup" className="text-emerald-800 hover:underline"> Signup</a>
+          <a href="/signup" className="text-cyan-800 hover:underline"> Signup</a>
         </p>
       </div>
     </div>
