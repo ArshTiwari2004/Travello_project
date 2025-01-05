@@ -1,4 +1,4 @@
-# Manipal Hackathon 2024 README Templat
+# Travello : Discover the world's hidden gems
 
 **Team Name:** `Synapse`
 
