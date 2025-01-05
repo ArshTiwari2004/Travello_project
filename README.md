@@ -11,6 +11,16 @@
 <p align="center"><em>Tourism in India often lacks engagement, leading to missed opportunities for travelers to explore local culture.To overcome all these problems ,We are developing a gamified tourism platform designed to revolutionize how travelers explore their destinations. Our application will guide users to hidden attractions and cultural experiences through interactive challenges and quests, transforming the act of discovery into an engaging adventure. Leveraging AI-driven personalization, users will receive customized itineraries that adapt to their preferences and real-time conditions. This platform not only enriches the travel experience but also fosters a deeper connection with local culture, making every journey memorable.</em></p>
 
 
+<div align="center">
+
+[![GitHub Issues](https://img.shields.io/github/issues/ArshTiwari2004/Travello_project)](https://github.com/ArshTiwari2004/Travello_project/issues)
+[![GitHub Forks](https://img.shields.io/github/forks/ArshTiwari2004/Travello_project)](https://github.com/ArshTiwari2004/Travello_project/network)
+[![GitHub Stars](https://img.shields.io/github/stars/ArshTiwari2004/Travello_project)](https://github.com/ArshTiwari2004/Travello_project/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/ArshTiwari2004/Travello_project)](https://github.com/ArshTiwari2004/Travello_project/graphs/contributors)
+[![License](https://img.shields.io/github/license/ArshTiwari2004/Travello_project)](LICENSE)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ArshTiwari2004/Travello_project)
+![GitHub last commit](https://img.shields.io/github/last-commit/ArshTiwari2004/Travello_project)
+
 ## Architecture
 
 
