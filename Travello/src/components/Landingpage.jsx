@@ -1,144 +1,116 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaHome, FaMapMarkedAlt, FaTrophy, FaUserAlt, FaPlane, FaMap, FaStar, FaUsers, FaCompass, FaMedal, FaCoins, FaGlobe } from "react-icons/fa";
-import { motion } from "framer-motion";
 import Typewriter from 'typewriter-effect';
+import { AuroraBackground } from "./ui/aurora-background";
 
 const LandingPage = () => {
   return (
-    <div className="bg-off-white"> 
-      {/* Hero Section */}
-      <div className="relative h-screen">
-        <div className="relative z-10">
-          {/* Header Section */}
-          <motion.header
-            className="absolute top-0 w-full p-4 z-20 bg-sky-blue"  
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="container mx-auto flex justify-between items-center">
-              <motion.h1
-                className="text-4xl font-extrabold tracking-wide text-off-white font-lobster"  
-                whileHover={{ scale: 1.1 }}
-              >
+    <div className="min-h-screen " id="home">
+      <AuroraBackground >
+      {/* Header */}
+      <header className="fixed top-6 w-full backdrop-blur-md  z-50">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex justify-between items-center">
+            <Link to="/" className="group">
+              <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent font-lobster group-hover:scale-105 transition-transform duration-300">
                 Travello
-              </motion.h1>
+              </h1>
+            </Link>
 
-              <nav className="flex space-x-6 items-center">
-                <Link to="/" className="text-lg font-medium text-off-white hover:text-light-blue transition font-montserrat"> {/* Light Blue hover */}
-                  <FaHome className="inline mr-1" /> Home
-                </Link>
+            <nav className="flex items-center space-x-8">
+              {['Home', 'About Us', 'Reviews', 'Latest Adventures'].map((item) => (
                 <a
-                  href="#about"
-                  className="text-lg font-medium text-white hover:text-blue-200 transition font-montserrat"
+                  key={item}
+                  href={`#${item.toLowerCase().replace(' ', '-')}`}
+                  className="relative text-gray-600 hover:text-blue-500 transition-colors duration-300 group"
                 >
-                  <FaMapMarkedAlt className="inline mr-1" /> About Us
+                  <span className="relative z-10">{item}</span>
+                  <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-blue-500 to-teal-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                 </a>
-                <a
-                  href="#reviews"
-                  className="text-lg font-medium text-white hover:text-blue-200 transition font-montserrat"
+              ))}
+              
+              <div className="flex items-center space-x-4">
+                <Link
+                  to="/signin"
+                  className="px-4 py-2 text-gray-600 hover:text-blue-500 transition-colors duration-300"
                 >
-                  <FaTrophy className="inline mr-1" /> Reviews
-                </a> 
-                <a
-                  href="#latest"
-                  className="text-lg font-medium text-white hover:text-blue-200 transition font-montserrat"
-                >
-                  <FaPlane className="inline mr-1" /> Latest Adventures
-                </a> 
-                {/* <Link to="/profile" className="text-lg font-medium text-off-white hover:text-light-blue transition font-montserrat">
-                  <FaUserAlt className="inline mr-1" /> Profile
-                </Link> */}
-                <Link to="/signup" className="px-4 py-2 border border-off-white text-off-white bg-sky-blue rounded-lg transition duration-300 hover:bg-light-blue hover:text-off-white"> {/* Sky Blue background with Light Blue hover */}
-                  Sign Up
-                </Link>
-                <Link to="/signin" className="px-4 py-2 border border-off-white text-off-white bg-sky-blue rounded-lg transition duration-300 hover:bg-light-blue hover:text-off-white">
                   Sign In
                 </Link>
-              </nav>
-            </div>
-          </motion.header>
-
-          {/* Split Screen Layout */}
-          <div className="flex h-full pt-20">
-            <div className="w-1/2 flex flex-col justify-center items-start pl-16">
-              <h2 className="text-6xl font-extrabold text-teal-green mb-4 leading-tight"> {/* Teal Green text */}
-                Let's Discover the World Together
-              </h2>
-
-              <motion.p className="text-4xl text-teal-green mb-8 font-playfair font-bold"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-              >
-                <Typewriter
-                  options={{
-                    strings: ["Let us take you away on your best trip ever"],
-                    autoStart: true,
-                    loop: true,
-                    delay: 100,
-                  }}
-                />
-              </motion.p>
-
-              <motion.button
-                className="px-8 py-4 text-lg font-semibold border border-light-blue text-light-blue rounded-lg bg-off-white hover:bg-light-blue hover:text-off-white transition-all duration-300"  // Light Blue border and text with Light Blue hover
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Let's Explore!
-              </motion.button>
-
-              <div className="flex justify-between mt-8 text-teal-green text-lg w-full">  {/* Teal Green text */}
-                <div className="flex items-center space-x-2">
-                  <FaMap className="text-2xl" />
-                  <span> 100+ Destinations</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <FaPlane className="text-2xl" />
-                  <span> 100+ Visits</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <FaStar className="text-2xl" />
-                  <span> 500+ Reviews</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <FaUsers className="text-2xl" />
-                  <span>300+ Activities</span>
-                </div>
+                <Link
+                  to="/signup"
+                  className="px-6 py-2 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-full hover:shadow-lg hover:shadow-blue-200 transition-all duration-300 transform hover:-translate-y-0.5"
+                >
+                  Sign Up
+                </Link>
               </div>
-            </div>
+            </nav>
+          </div>
+        </div>
+      </header>
 
-            <div className="w-1/2 h-full flex justify-center items-center">
-              <img
-                src="imag1.jpg"
-                alt="Travel Destination"
-                className="w-2/3 h-auto object-cover rounded-lg transform transition-all duration-500 hover:scale-105"
+      {/* Hero Section */}
+      <div className="pt-24 min-h-screen">
+        <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 py-12">
+          {/* Left Content */}
+          <div className="flex-1 space-y-8">
+            <h2 className="text-6xl font-bold leading-tight bg-gradient-to-r from-blue-600 via-blue-500 to-teal-400 bg-clip-text text-transparent">
+              Discover the World's Hidden Gems
+            </h2>
+
+            <div className="text-3xl text-gray-700 h-20">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Travel with Travello",
+                    "Your journey begins here",
+                    "Experience unique adventures",
+                    "Create unforgettable memories",
+                    "Discover hidden gems",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 50,
+                }}
               />
             </div>
+
+            <Link
+              to="/signup"
+              className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-full text-lg font-semibold hover:shadow-xl hover:shadow-blue-200 transition-all duration-300 transform hover:-translate-y-1"
+            >
+              Let's Explore!
+            </Link>
+
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 mt-12">
+              {[
+                { icon: FaMap, text: "100+ Locations" },
+                { icon: FaPlane, text: "100+ Visits" },
+                { icon: FaStar, text: "500+ Reviews" },
+                { icon: FaUsers, text: "300+ Activities" }
+              ].map(({ icon: Icon, text }) => (
+                <div key={text} className="flex flex-col items-center space-y-2 p-4  transition-all duration-300">
+                  <Icon className="text-3xl text-blue-500" />
+                  <span className="text-gray-600 text-sm font-medium">{text}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Content */}
+          <div className="flex-1 relative">
+            <div className="absolute inset-0 rounded-2xl transform rotate-6 blur-3xl" />
+            <img
+              src="landing.svg"
+              alt="Travel Destination"
+              className="relative rounded-2xl  transform hover:scale-105 transition-transform duration-500 cursor-pointer"
+            />
           </div>
         </div>
 
-        <div className="flex justify-center items-center mt-12 space-x-12 text-teal-green text-2xl font-bold">  {/* Teal Green text */}
-          <motion.div whileHover={{ scale: 1.2 }} className="flex flex-col items-center">
-            <FaCompass className="text-4xl" />
-            <span>Explore</span>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.2 }} className="flex flex-col items-center">
-            <FaMedal className="text-4xl" />
-            <span>Compete</span>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.2 }} className="flex flex-col items-center">
-            <FaCoins className="text-4xl" />
-            <span>Earn</span>
-          </motion.div>
-          <motion.div whileHover={{ scale: 1.2 }} className="flex flex-col items-center">
-            <FaGlobe className="text-4xl" />
-            <span>Experience</span>
-          </motion.div>
-        </div>
+       
       </div>
+    </AuroraBackground>
     </div>
   );
 };

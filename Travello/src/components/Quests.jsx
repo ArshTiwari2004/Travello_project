@@ -202,25 +202,25 @@ const Quests = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-mint to-light-green p-8">
+    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-cyan-100 py-12 px-4">
       <h1 className="text-4xl font-bold text-center mb-8 text-teal-900">Adventure Quests</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        <div className="bg-gradient-to-b from-mint to-light-green rounded-lg shadow-lg p-6 overflow-y-auto max-h-[70vh]">
+        <div className="bg-gradient-to-b from-cyan-50 to-light-green rounded-lg shadow-lg p-6 overflow-y-auto max-h-[70vh]">
           <h2 className="text-2xl font-semibold mb-4 text-teal-900">Available Quests</h2>
           {quests.map(quest => (
             <div
               key={quest.id}
               className={`mb-4 p-4 rounded-lg cursor-pointer transition-all duration-300 ${
                 quest.completed
-                  ? 'bg-teal-10 border-mint-300'
-                  : 'bg-teal-50 border-indigo-200 hover:bg-teal-100'
+                  ? 'bg-cyan-20 border-cyan-300'
+                  : 'bg-cyan-50 border-cyan-200 hover:bg-cyan-200'
               } border-2`}
               onClick={() => selectQuest(quest.id)} // Just select the quest
             >
               <div className="flex items-center justify-between">
-                <h3 className="text-lg font-medium text-teal-green">{quest.title}</h3>
+                <h3 className="text-lg font-medium text-cyan-900">{quest.title}</h3>
                 <span className="flex items-center text-teal-600">
                   {quest.type === 'photo' && <Camera className="mr-1" size={18} />}
                   {quest.type === 'location' && <MapPin className="mr-1" size={18} />}
@@ -230,7 +230,7 @@ const Quests = () => {
               </div>
               <p className="text-sm text-gray-800 mt-1">{quest.description}</p>
               {quest.completed && (
-                <span className="inline-block bg-emerald-700 text-white text-xs px-2 py-1 rounded mt-2">
+                <span className="inline-block bg-cyan-600 text-white text-xs px-2 py-1 rounded mt-2">
                   Completed
                 </span>
               )}
@@ -240,10 +240,10 @@ const Quests = () => {
         
         {/* Quest Details */}
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <h2 className="text-2xl font-semibold mb-4 text-teal-900">Quest Details</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-cyan-900">Quest Details</h2>
           {selectedQuest ? (
             <animated.div style={questAnimation}>
-              <h3 className="text-xl font-medium text-teal-green mb-2">{selectedQuest.title} - Details</h3>
+              <h3 className="text-xl font-medium text-cyan-500 mb-2">{selectedQuest.title} - Details</h3>
               <p className="text-gray-800 mb-4">{selectedQuest.description}</p>
               <p className="text-gray-800 mb-4">
                 To complete this quest, you need to: {selectedQuest.details}
